@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Saylani_Welfare_Trust_Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saylani Student Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+       body {
+         font-family: 'Inter', sans-serif;
+       }
+       /* Custom animation for the floating button pulse effect */
+       @keyframes pulse-slow {
+         0%, 100% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3); }
+         50% { transform: scale(1.05); box-shadow: 0 15px 25px -3px rgba(37, 99, 235, 0.5); }
+       }
+       .animate-pulse-slow {
+         animation: pulse-slow 3s infinite;
+       }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
